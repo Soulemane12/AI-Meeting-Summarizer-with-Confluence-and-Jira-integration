@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Meeting Summarizer</h1>
+        <p class="subtitle">Effortlessly summarize your meetings and manage action items</p>
+        
+        <button id="start-summarizer" class="btn-primary">Start Summarizing</button>
+        
+        <div class="features">
+            <div class="feature-item">
+                <h3>Transcribe Audio</h3>
+                <p>Upload MP3 files for automatic transcription</p>
+            </div>
+            <div class="feature-item">
+                <h3>Generate Summaries</h3>
+                <p>Get concise summaries of your meetings</p>
+            </div>
+            <div class="feature-item">
+                <h3>Manage Action Items</h3>
+                <p>Track and assign tasks from your meetings</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

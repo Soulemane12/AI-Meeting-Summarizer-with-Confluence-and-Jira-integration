@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #5f6368;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1557b0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin: 0 10px;
+}
+
+.feature-item h3 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #5f6368;
+}
+
+.input, .textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.file-input-label {
+    background-color: #1a73e8;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#result {
+    text-align: left;
+    margin-top: 30px;
+}
+
+#action-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#action-items li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#action-items button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}

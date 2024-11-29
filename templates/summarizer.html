@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Summarizer - Summarize</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Meeting Summarizer</h1>
+        
+        <input type="text" id="name-filter" placeholder="Enter your name to filter tasks" class="input">
+        <form id="summarize-form">
+            <textarea id="transcript" name="transcript" rows="10" cols="50" placeholder="Enter meeting transcript here..." class="textarea"></textarea>
+            <div class="file-input-wrapper">
+                <input type="file" id="audio-file" accept="audio/mp3" class="file-input">
+                <label for="audio-file" class="file-input-label">Choose MP3 file</label>
+            </div>
+            <button type="submit" class="btn-primary">Summarize</button>
+        </form>
+        <div id="result">
+            <h2>Summary</h2>
+            <p id="summary"></p>
+            <h2>Action Items</h2>
+            <ul id="action-items"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/summarizer.js') }}"></script>
+</body>
+</html>
+
